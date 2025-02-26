@@ -4,10 +4,10 @@
  */
 
 //importação do modulo de conexão (database.js)
-const { conectar, desconectar } = require(database.js)
+const { conectar, desconectar } = require('./database.js')
 
 //importaçao do modelo de dados (hambugueres/produtos)
-const lanchesModel = require('./src/modelssrc/models/lanches.js')
+const lanchesModel = require('./src/models/lanches.js')
 
 //importaçao do pacote "string-similarity"
 const stringsimilarity = require('string-similarity')
@@ -39,9 +39,15 @@ const criarLanche = async (nomeLan, precoLan, descricaoLan, imagemLan) => {
 const app = async () => {
 
 //tentativa de conexao
-conectar()
+await conectar()
+
+// Cadastrar lanche - 1
+await criarLanche('Lanche 1', '12.50','Pão, carne, queijo e muito amor', 'img/lanchebom.png',)
+
 
 //tentatica de desconexao
-desconectar()
+await desconectar()
 
 }
+
+app()
