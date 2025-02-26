@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mongoose": "^8.10.2",
+    "string-similarity": "^4.0.4"
+  }
+}
