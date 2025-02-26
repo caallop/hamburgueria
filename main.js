@@ -35,3 +35,13 @@ const criarLanche = async (nomeLan, precoLan, descricaoLan, imagemLan) => {
       }   
     }
 }
+
+const app = async () => {
+
+//tentativa de conexao
+conectar()
+
+//tentatica de desconexao
+desconectar()
+
+}
