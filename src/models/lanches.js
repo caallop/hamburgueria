@@ -10,6 +10,7 @@ const {model, Schema } = require('mongoose')
 const LanchesSchema = new Schema({
     nomeLanche:{
         type: String,
+        unique: true
     },
     precoLanche:{
         type: Number,
