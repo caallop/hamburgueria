@@ -1,9 +1,8 @@
 Desafio - banco de dados (individual ou dupla)
 
 
-- Listar todos os lanches
-- Listar um lanche pelo nome
-- Alterar os dados de um lanche
+
+
 - Excluir um lanche 
 
   
